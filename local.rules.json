@@ -1,0 +1,40 @@
+{
+    "rules":[
+        
+        {
+            "rule_id":"10020003",
+            "action": "LOG",
+            "protocol": "udp",
+            "source_ip": "any",
+            "source_port": "any",
+            "dest_ip": "home",
+            "dest_port": "any",
+            "message": "tcp  packet detected",
+            "priority": 5
+        },
+        {
+            "rule_id":"10020005",
+            "action": "LOG",
+            "protocol": "icmp",
+            "source_ip": "home",
+            "source_port": "any",
+            "dest_ip": "any",
+            "dest_port": "any",
+            "message": "icmp  packet detected",
+            "priority": 1
+        },
+        {
+            "rule_id":"10020004",
+            "action": "LOG",
+            "protocol": "tcp",
+            "source_ip": "10.5.10.72",
+            "source_port": "any",
+            "dest_ip": "home",
+            "dest_port": "any",
+            "message": "tcp  packet detected",
+            "priority": 5
+        }
+
+
+    ]
+}
